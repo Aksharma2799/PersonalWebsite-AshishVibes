@@ -1,0 +1,6 @@
+/* Example of CSS to add hover effect on anchor tag while preserving original icon color */
+
+a:hover {
+    background-color: #942548; /* Change to your desired hover color */
+  }
+  
