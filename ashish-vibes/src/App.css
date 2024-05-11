@@ -4,3 +4,13 @@ body{
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
 }
+
+:root {
+  --primary-color: #fdc435;
+}
+
+/* Example usage */
+.primary-color {
+  color: var(--primary-color);
+  /* Or any other property */
+}

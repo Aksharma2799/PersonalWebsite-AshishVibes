@@ -1,0 +1,64 @@
+/* role */
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.role {
+  font-size: 36px;
+  color: #333;
+  overflow: hidden; /* Hide overflowing text */
+  border-right: 0.15em solid orange; /* Typing cursor */
+  white-space: nowrap; /* Keep text in a single line */
+  width: 10em; /* Width of the container */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Discription */
+.discription {
+  width: 50%;
+}
+
+/* button */
+.homebutton .resumeButton,
+.homebutton .SocialButton {
+  /* border: 2px red solid; */
+  border-radius: 7px;
+  padding: 5px;
+  margin: 7px;
+}
+
+.homebutton .resumeButton {
+  background-color: var(--primary-color);
+}
+.homebutton .SocialButton {
+  border: 2px var(--primary-color) solid;
+}
+
+/* shape */
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10em;
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
