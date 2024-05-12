@@ -3,6 +3,9 @@
 body{
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
+  /* background-color: black; */
+  background: rgb(15,23,42);
+background: linear-gradient(90deg, rgba(15,23,42,1) 0%, rgba(30,46,83,1) 65%, rgba(29,44,80,1) 100%);
 }
 
 :root {

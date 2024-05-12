@@ -1,0 +1,7 @@
+.homebutton .resumeButton,
+.homebutton .SocialButton {
+  /* border: 2px red solid; */
+  border-radius: 7px;
+  padding: 5px;
+  margin: 7px;
+}

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import "../src/Home.css";
 import Blob from "./components/Blob/Blob";
+import About from "./components/About/About";
 
 export const Home = () => {
   const roles = ["Developer", "Designer", "YouTuber"];
@@ -43,6 +44,7 @@ export const Home = () => {
           <Blob />
         </div>
       </div>
+      <About/>
       <Footer />
     </div>
   );
