@@ -1,21 +1,19 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
 import "../src/Home.css";
 import Blob from "./components/Blob/Blob";
-import About from "./components/About/About";
+import AnimatedIcons from "./components/AnimatedIcons/AnimatedIcons";
 
 export const Home = () => {
   const roles = ["Developer", "Designer", "YouTuber"];
   const [text, setText] = useTypewriter({ words: roles, loop: true });
 
   return (
-    <div className="">
-      <Navbar />
-      <div className="homePage flex ">
+    <div className="justify-center">
+      {/* <Navbar /> */}
+      <div className="homePage flex flex-col md:flex-row p-11">
         <div className="leftSide">
-          <div className="p-11">
+          <div className="p-11 text-white">
             <h1 className="primary-color font-extrabold text-4xl py-3">
               Hello,
             </h1>
@@ -34,8 +32,21 @@ export const Home = () => {
               Welcome to my digital journey!
             </div>
             <div className="homebutton flex font-semibold">
-              <button className="resumeButton">Resume</button>
-              <button className="SocialButton">LinkedIn</button>
+              <a
+                href="/path/to/your/resume.pdf"
+                download="YourResume.pdf"
+                className="resumeButton"
+              >
+                Resume
+              </a>
+              <button className="SocialButton">
+                <a
+                  href="https://www.linkedin.com/in/ashishvishwakarma-ashishvibes/"
+                  target="blank"
+                >
+                  LinkedIn
+                </a>
+              </button>
             </div>
           </div>
         </div>
@@ -44,8 +55,7 @@ export const Home = () => {
           <Blob />
         </div>
       </div>
-      <About/>
-      <Footer />
+      <AnimatedIcons/>
     </div>
   );
 };

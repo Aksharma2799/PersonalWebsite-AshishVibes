@@ -1,4 +1,5 @@
 /* role */
+
 .container {
   text-align: center;
   font-family: Arial, sans-serif;
@@ -21,7 +22,7 @@
 
 /* Discription */
 .discription {
-  width: 50%;
+  /* width: 50%; */
 }
 
 /* button */

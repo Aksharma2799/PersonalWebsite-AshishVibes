@@ -1,5 +1,6 @@
 .blob{
-    background-image: url(https://i.ibb.co/gt2CH1N/IMG-0014.jpg);
+    /* background-image: url(https://i.ibb.co/gt2CH1N/IMG-0014.jpg); */
+    background-image: url('../../assets/image/logo.jpg');
     width: 380px;
     height: 380px;
     background-size: cover;
