@@ -11,25 +11,25 @@ const Footer = () => {
       {/* <p>Find us here -</p> */}
         <a
           href="https://github.com/Aksharma2799"
-          className="text-gray-300 mx-2"
+          className="text-black-300 mx-2"
         >
           <FaGithub size={24} />
         </a>
         <a
           href="https://www.linkedin.com/in/ashishvishwakarma-ashishvibes/"
-          className="text-gray-300 mx-2"
+          className="text-black-300 mx-2"
         >
           <FaLinkedin size={24} />
         </a>
         <a
           href="https://youtube.com/ashishvibes19"
-          className="text-gray-300 mx-2"
+          className="text-black-300 mx-2 hover:text-red-600"
         >
           <FaYoutube size={24} />
         </a>
         <a
           href="https://instagram.com/aksharma2799"
-          className="text-gray-300 mx-2"
+          className="text-black-300 mx-2 instgram"
         >
           <FaInstagram size={24} />
         </a>

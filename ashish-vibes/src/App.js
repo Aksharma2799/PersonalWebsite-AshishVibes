@@ -17,6 +17,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
+        {/* <Route path="/youtube" component={YouTube} /> */}
       </div>
       <Footer />
     </Router>

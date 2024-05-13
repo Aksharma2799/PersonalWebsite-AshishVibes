@@ -14,6 +14,7 @@ body {
 }
 :root {
   --primary-color: #fdc435;
+  --instagram: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7)
 }
 
 /* Example usage */

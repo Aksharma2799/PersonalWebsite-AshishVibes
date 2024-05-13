@@ -32,7 +32,7 @@ const Navbar = () => {
                 Projects
               </Link>
               <Link to="/youtube" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
-                YouTube
+                <a href="https://youtube.com/@ashishvibes19?si=77J-RHHbUZLiDanm">YouTube</a>
               </Link>
             </div>
           </div>
