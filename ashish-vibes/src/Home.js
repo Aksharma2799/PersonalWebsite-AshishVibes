@@ -3,6 +3,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import "../src/Home.css";
 import Blob from "./components/Blob/Blob";
 import AnimatedIcons from "./components/AnimatedIcons/AnimatedIcons";
+import Projects from "./components/Projects/Projects";
 
 export const Home = () => {
   const roles = ["Developer", "Designer", "YouTuber"];
@@ -56,6 +57,7 @@ export const Home = () => {
         </div>
       </div>
       <AnimatedIcons/>
+      <Projects/>
     </div>
   );
 };

@@ -7,6 +7,9 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
+import Experience from "./components/About/Experience";
+import Education from "./components/About/Education";
+import SkillSection from "./components/About/SkillSection";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
+        <Route path="/skills" component={SkillSection} />
+        <Route path="/experience" component={Experience} />
+        <Route path="/education" component={Education} />
         {/* <Route path="/youtube" component={YouTube} /> */}
       </div>
       <Footer />
