@@ -4,6 +4,7 @@ import "../src/Home.css";
 import Blob from "./components/Blob/Blob";
 import AnimatedIcons from "./components/AnimatedIcons/AnimatedIcons";
 import Projects from "./components/Projects/Projects";
+import Skills from "./components/About/Skills";
 
 export const Home = () => {
   const roles = ["Developer", "Designer", "YouTuber"];
@@ -58,6 +59,7 @@ export const Home = () => {
       </div>
       <AnimatedIcons/>
       <Projects/>
+      <Skills/>
     </div>
   );
 };

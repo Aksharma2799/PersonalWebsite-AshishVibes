@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "../Projects/Project.css";
+import "../About/About.css";
 
 export const Skills = () => {
   return (
     <>
-      <div className="flex justify-center">
-        <div className="primary-color font-extrabold text-4xl py-3">Skills</div>
-      </div>
+     <div className="flex flex-col items-center">
+  <div className="primary-color font-extrabold text-4xl py-3">Skills</div>
+  <div className="underLine underLineSkill mt-12 sm:mt-3.2"></div>
+</div>
+
       <nav className="bg-transparent flex justify-center">
         <div className="flex">
           <div className="text-white">
