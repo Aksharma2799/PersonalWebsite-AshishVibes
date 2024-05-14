@@ -58,8 +58,8 @@ export const Home = () => {
         </div>
       </div>
       <AnimatedIcons/>
-      <Projects/>
-      <Skills/>
+      {/* <Projects/> */}
+      {/* <Skills/> */}
     </div>
   );
 };

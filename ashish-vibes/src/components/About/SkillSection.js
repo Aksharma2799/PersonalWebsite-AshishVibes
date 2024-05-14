@@ -13,6 +13,8 @@ const SkillSection = () => {
   ];
 
   return (
+   <div className="flex justify-start m-11">
+    <div className="Image">    </div>
     <div className="p-4 text-white">
       {skills.map((skill, index) => (
         <div key={index} className="mb-4">
@@ -29,6 +31,7 @@ const SkillSection = () => {
         </div>
       ))}
     </div>
+   </div>
   );
 };
 

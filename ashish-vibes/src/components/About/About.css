@@ -9,3 +9,23 @@
   width: 70px;
   margin-top: 52px;
 }
+.Image{
+  background-image: url('../../assets/image/skill.png');
+  width: 480px;
+  height: 400px;
+  background-size: cover;
+  margin: 20px;
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
