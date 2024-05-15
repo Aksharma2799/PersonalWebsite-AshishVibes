@@ -231,7 +231,7 @@ export const ServiceCard = [
       "I create dynamic, user-friendly websites tailored to your needs. Whether it's a sleek business site or an interactive e-commerce platform, I ensure seamless functionality and a smooth user experience.",
   },
   {
-    image: "https://i.ibb.co/PmwMRCf/logo.png",
+    image: "https://i.ibb.co/pZQCDjS/ads.png",
     title: "Advertisement",
     description:
       "I craft compelling campaigns that captivate audiences and drive results. From conceptualizing innovative ideas to executing strategic plans, my goal is to elevate your brand’s presence.",

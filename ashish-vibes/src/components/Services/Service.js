@@ -60,15 +60,16 @@ const Card = ({ image, title, description }) => {
       <img
         src={image}
         alt={title}
-        className="card-image w-full h-48 object-cover"
+        className="card-image bg-cover flex justify-center items-center h-48 object-cover"
       />
+
       <div className="card-content text-white p-2">
         <h3 className="card-title flex justify-center text-2xl font-bold mb-2">
           {title}
         </h3>
         <p className="card-description text-white-600">
           {isExpanded ? description : getShortDescription(description)}
-          <button className="text-blue-500 text-sm ml-2" onClick={toggleExpand}>
+          <button className="text-blue-500 ml-2" onClick={toggleExpand}>
             {isExpanded ? "Show Less" : "Show More"}
           </button>
         </p>

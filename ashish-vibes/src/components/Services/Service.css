@@ -3,9 +3,6 @@
   overflow: hidden;
   cursor: pointer;
   border: 2px solid white;
-    /* perspective: 700px; */
-    /* unicode-bidi: isolate; */
-    /* box-shadow: rgb(22, 23, 28) 0px 0px 5px 10px inset; */
 }
 .card::before {
   content: "";
