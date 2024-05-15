@@ -5,6 +5,7 @@ import Blob from "./components/Blob/Blob";
 import AnimatedIcons from "./components/AnimatedIcons/AnimatedIcons";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/About/Skills";
+import Service from "./components/Services/Service";
 
 export const Home = () => {
   const roles = ["Developer", "Designer", "YouTuber"];
@@ -13,7 +14,7 @@ export const Home = () => {
   return (
     <div className="justify-center">
       {/* <Navbar /> */}
-      <div className="homePage flex flex-col md:flex-row p-11">
+      <div className="homePage flex flex-col justify-center md:flex-row p-11">
         <div className="leftSide">
           <div className="p-11 text-white">
             <h1 className="primary-color font-extrabold text-4xl py-3">
@@ -60,6 +61,7 @@ export const Home = () => {
       <AnimatedIcons/>
       {/* <Projects/> */}
       {/* <Skills/> */}
+      <Service/>
     </div>
   );
 };

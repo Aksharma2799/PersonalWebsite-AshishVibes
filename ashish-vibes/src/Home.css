@@ -32,13 +32,20 @@
   border-radius: 7px;
   padding: 5px;
   margin: 7px;
+  
 }
 
 .homebutton .resumeButton {
   background-color: var(--primary-color);
+  box-shadow: rgb(253, 196, 53) 0px 20px 30px -10px;
+  box-shadow: rgb(189, 195, 201) 0px 20px 30px -10px;
+
 }
 .homebutton .SocialButton {
   border: 2px var(--primary-color) solid;
+  box-shadow: rgb(253, 196, 53) 0px 20px 30px -10px;
+  box-shadow: rgb(189, 195, 201) 0px 20px 30px -10px;
+
 }
 
 /* shape */

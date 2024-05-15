@@ -6,7 +6,7 @@ import SkillSection from "./SkillSection";
 export const About = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row p-11">
+      <div className="flex flex-col justify-center md:flex-row p-11">
         <Blob />
         <div className="md:order-last ml-11 mt-10 ">
           <h1 className="primary-color font-extrabold text-4xl py-3">

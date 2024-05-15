@@ -5,20 +5,21 @@
   padding: 5px;
   margin: 7px;
 }
-.underLineSkill{
+.underLineSkill {
   width: 70px;
   margin-top: 52px;
 }
-.Image{
-  background-image: url('../../assets/image/skill.png');
+.Image {
+  background-image: url("../../assets/image/skill.png");
   width: 480px;
   height: 400px;
   background-size: cover;
   margin: 20px;
-  animation: animate 5s ease-in-out infinite;
+  animation: skillanimate 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
-@keyframes animate {
+
+@keyframes skillanimate {
   0% {
     transform: translateY(-50px);
   }
@@ -28,4 +29,63 @@
   100% {
     transform: translateY(-50px);
   }
+}
+.iconAnimation {
+  color: white;
+  position: relative; /* Ensures the icon stays within its container */
+  animation: iconAnimation 10s ease-in-out infinite;
+}
+
+@keyframes iconAnimation {
+  0% {
+    transform: translateY(-50px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateX(50px);
+  }
+  60% {
+    transform: translateY(50px);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+/* skillIcon Css */
+.text-shpere {
+  position: relative;
+  top: 0;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.tagcloud {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 50vh;
+
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  font-size: 1.3em;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+  color: white;
+  text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+  color: var(--primary-color);
 }

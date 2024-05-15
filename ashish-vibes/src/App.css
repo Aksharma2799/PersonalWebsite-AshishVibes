@@ -13,7 +13,7 @@ body {
   );
 }
 :root {
-  --primary-color: #fdc435;
+  --primary-color: rgb(253, 196, 53);
   --secondary-color: rgb(11, 66, 90);
   --instagram: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7)
 }
