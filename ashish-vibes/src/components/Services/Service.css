@@ -1,8 +1,26 @@
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Flex container for cards */
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .card {
+  color: var(--primary-color);
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  border: 2px solid white;
+  /* border: 2px solid rgb(255, 255, 255, 0.1); */
+  box-shadow: rgba(51, 50, 50, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .card::before {
   content: "";

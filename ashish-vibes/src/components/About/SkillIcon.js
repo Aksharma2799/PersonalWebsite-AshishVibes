@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import TagCloud from "TagCloud";
-import './About.css'
+import "./About.css";
+
 const SkillIcon = () => {
   useEffect(() => {
     console.log("Initializing TagCloud");
@@ -19,26 +20,55 @@ const SkillIcon = () => {
       "ES6",
       "GIT",
       "GITHUB",
-      "Tailwind"
+      "Tailwind",
     ];
 
-    const options = {
-      radius: 300,
+    const calculateRadius = () => {
+      const width = window.innerWidth;
+      if (width < 600) {
+        return 100;
+      } else if (width < 900) {
+        return 150;
+      } else {
+        return 250;
+      }
+    };
+
+    let tagCloudInstance = TagCloud(container, texts, {
+      radius: calculateRadius(),
       maxSpeed: "normal",
       initSpeed: "normal",
       keep: true,
+    });
+
+    const handleResize = () => {
+      tagCloudInstance.destroy();
+      tagCloudInstance = TagCloud(container, texts, {
+        radius: calculateRadius(),
+        maxSpeed: "normal",
+        initSpeed: "normal",
+        keep: true,
+      });
     };
 
-    const tagCloudInstance = TagCloud(container, texts, options);
+    window.addEventListener("resize", handleResize);
 
     return () => {
       tagCloudInstance.destroy();
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
-    <div className="text-sphere">
-      <span className="tagcloud"></span>
+    <div className="flex">
+      <div className="flex flex-col md:flex-row justify-center m-11">
+        <div className="Image"> </div>
+        {/* //   <SkillIcon/> */}
+      </div>
+
+      <div className="text-sphere m-11">
+        <span className="tagcloud"></span>
+      </div>
     </div>
   );
 };

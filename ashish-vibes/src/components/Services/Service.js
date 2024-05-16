@@ -9,7 +9,7 @@ const Service = () => {
         <div className="primary-color text-4xl font-bold">Service</div>
         <div className="underLine flex flex-col mt-11"></div>
       </div>
-      <div className="flex justify-center items-center bg-transparent p-2 m-11">
+      <div className="flex justify-center items-center bg-transparent p-2 m-11 ">
         <div className="flex flex-row flex-nowrap gap-5">
           {ServiceCard.map((card, index) => (
             <Card
@@ -60,10 +60,10 @@ const Card = ({ image, title, description }) => {
       <img
         src={image}
         alt={title}
-        className="card-image bg-cover flex justify-center items-center h-48 object-cover"
+        className="card-image bg-cover flex justify-center items-center ml-auto mr-auto h-48 object-cover"
       />
 
-      <div className="card-content text-white p-2">
+      <div className="card-content text-white p-2 ">
         <h3 className="card-title flex justify-center text-2xl font-bold mb-2">
           {title}
         </h3>

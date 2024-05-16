@@ -11,6 +11,7 @@ body {
     rgba(30, 46, 83, 1) 65%,
     rgba(29, 44, 80, 1) 100%
   );
+  
 }
 :root {
   --primary-color: rgb(253, 196, 53);

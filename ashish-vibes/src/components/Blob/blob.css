@@ -21,3 +21,10 @@
     }
 }
 
+@media (max-width: 800px) {
+    .blob {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+}

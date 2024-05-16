@@ -225,7 +225,7 @@ export const apiUrl = {
 
 export const ServiceCard = [
   {
-    image: "https://i.ibb.co/PmwMRCf/logo.png",
+    image: "https://i.ibb.co/1qCzZRw/development-4536630-1280.png",
     title: "Web Development",
     description:
       "I create dynamic, user-friendly websites tailored to your needs. Whether it's a sleek business site or an interactive e-commerce platform, I ensure seamless functionality and a smooth user experience.",
@@ -237,9 +237,24 @@ export const ServiceCard = [
       "I craft compelling campaigns that captivate audiences and drive results. From conceptualizing innovative ideas to executing strategic plans, my goal is to elevate your brand’s presence.",
   },
   {
-    image: "https://i.ibb.co/PmwMRCf/logo.png",
+    image: "https://i.ibb.co/XFs30bD/graphics-3.png",
     title: "Design",
     description:
       "I blend creativity with functionality to produce visually stunning and effective solutions. I create eye-catching posters, sleek web pages, and memorable logos that stand out. My focus is on aesthetics and usability to bring your vision to life.",
   },
+];
+
+export const educationData = [
+  {
+    "company": "ABC University",
+    "jobTitle": "Bachelor of Science in Computer Science",
+    "years": "2015 - 2019",
+    "description": "Studied core computer science subjects including algorithms, data structures, and software engineering."
+  },
+  {
+    "company": "XYZ Institute",
+    "jobTitle": "Master of Science in Software Engineering",
+    "years": "2019 - 2021",
+    "description": "Specialized in software development methodologies, project management, and advanced programming."
+  }
 ];
