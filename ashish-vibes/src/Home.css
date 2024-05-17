@@ -2,22 +2,11 @@
 
 .container {
   text-align: center;
-  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-}
-
-.role {
-  font-size: 36px;
-  color: #333;
-  overflow: hidden; /* Hide overflowing text */
-  border-right: 0.15em solid orange; /* Typing cursor */
-  white-space: nowrap; /* Keep text in a single line */
-  width: 10em; /* Width of the container */
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 /* Discription */
@@ -32,22 +21,25 @@
   border-radius: 7px;
   padding: 5px;
   margin: 7px;
-  
+  box-shadow: rgb(189, 195, 201) 0px 20px 30px -10px;
+  transition: transform 0.3s ease;
+
 }
 
 .homebutton .resumeButton {
   background-color: var(--primary-color);
-  box-shadow: rgb(253, 196, 53) 0px 20px 30px -10px;
-  box-shadow: rgb(189, 195, 201) 0px 20px 30px -10px;
+  /* box-shadow: rgb(253, 196, 53) 0px 20px 30px -10px; */
 
 }
 .homebutton .SocialButton {
   border: 2px var(--primary-color) solid;
-  box-shadow: rgb(253, 196, 53) 0px 20px 30px -10px;
-  box-shadow: rgb(189, 195, 201) 0px 20px 30px -10px;
-
 }
 
+.homebutton .resumeButton:hover,
+.homebutton .SocialButton:hover {
+  transform: scale(1.1)
+
+}
 /* shape */
 
 /* Typing animation */

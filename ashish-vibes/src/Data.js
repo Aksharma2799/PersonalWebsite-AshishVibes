@@ -256,5 +256,44 @@ export const educationData = [
     "jobTitle": "Master of Science in Software Engineering",
     "years": "2019 - 2021",
     "description": "Specialized in software development methodologies, project management, and advanced programming."
+  },
+  {
+    "company": "XYZ InstituteInstituteInstitute",
+    "jobTitle": "Master of Science in Software Engineering",
+    "years": "2019 - 2021",
+    "description": "Specialized in software development methodologies, project management, and advanced programming."
   }
+];
+
+export const experienceData = [
+  {
+    "company_name": "Bahwan Cybertek PVT LTD",
+    "position": "Software Engineer",
+    "start_date": "2022-07-22",
+    "end_date": "Present",
+    "responsibilities": [
+      "Designed and implemented software solutions for product features.",
+      "Collaborated with cross-functional teams to deliver projects on time.",
+      "Identified and resolved technical issues in a timely manner.",
+      "Contributed to the improvement of development processes and methodologies."
+    ],
+    "achievements": [
+      "Received Employee of the Month award for outstanding performance.",
+      "Reduced system downtime by 20% through implementation of performance optimization strategies."
+    ]
+  },
+  {
+    "company_name": "Another Company",
+    "position": "Another Position",
+    "start_date": "2020-01-01",
+    "end_date": "2022-06-30",
+    "responsibilities": [
+      "Developed new features for the company's flagship product.",
+      "Participated in code reviews and provided constructive feedback.",
+      "Researched and implemented emerging technologies to improve product functionality."
+    ],
+    "achievements": [
+      "Led a team that successfully launched a major product update ahead of schedule.",
+    ]
+  },
 ];

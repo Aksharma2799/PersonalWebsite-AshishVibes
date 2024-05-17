@@ -60,7 +60,7 @@ const SkillIcon = () => {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="flex justify-center">
       <div className="flex flex-col md:flex-row justify-center m-11">
         <div className="Image"> </div>
         {/* //   <SkillIcon/> */}

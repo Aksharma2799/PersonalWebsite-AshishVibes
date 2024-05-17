@@ -6,6 +6,7 @@ import AnimatedIcons from "./components/AnimatedIcons/AnimatedIcons";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/About/Skills";
 import Service from "./components/Services/Service";
+import Contact from "./components/Contact/Contact";
 
 export const Home = () => {
   const roles = ["Developer", "Designer", "YouTuber"];
@@ -62,6 +63,7 @@ export const Home = () => {
       {/* <Projects/> */}
       {/* <Skills/> */}
       <Service/>
+      <Contact/>
     </div>
   );
 };

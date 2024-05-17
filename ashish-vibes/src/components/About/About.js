@@ -24,7 +24,7 @@ export const About = () => {
             embark on a journey of exploration, creativity, and growth together!
           </p>
 
-          <div className="homebutton">
+          <div className="homebutton text-white font-semibold">
             <button className="resumeButton">Resume</button>
           </div>
         </div>

@@ -1,0 +1,24 @@
+/* Portifolio.css */
+
+.timeline-line {
+    position: relative;
+    /* border-left: 2px solid #e5e7eb; */
+  }
+  
+  .timeline-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 5px;
+    height: 100%;
+    background: var(--primary-color);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 3s ease-out;
+  }
+  
+  .timeline-line.animate-line::before {
+    transform: scaleY(1);
+  }
+  

@@ -1,0 +1,37 @@
+.Image-contactUs {
+  background-image: url("../../assets/image/contactUs.png");
+  /* width: 380px; */
+}
+.contactUs {
+  width: 150px;
+}
+
+.formButtom {
+  position: relative;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  left: 60%;
+  padding: 5px;
+  margin: 7px;
+  border: 2px var(--primary-color) solid;
+  box-shadow: rgb(189, 195, 201) 0px 20px 30px -10px;
+}
+.formButtom:hover {
+  border: none;
+  background-color: var(--primary-color);
+  /* transition: 0.5s ease-in; */
+}
+
+form input,
+form textarea {
+  box-shadow: rgb(201, 196, 189) 0px 20px 30px -15px;
+}
+
+.contactDetails {
+  border-radius: 7px;
+  box-shadow: rgba(51, 50, 50, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

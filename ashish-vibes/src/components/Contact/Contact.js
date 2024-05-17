@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import "../About/About.css";
+import "./Contact.css";
+import "../../../src/Home.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,72 +22,94 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Send email (You can implement this part using a backend service or an API)
-    // For demonstration purposes, we'll just console.log the form data and set submitted to true
     console.log("Form Data:", formData);
     setSubmitted(true);
   };
 
   return (
-    <div className="container mx-auto mt-10">
-      <h1 className="text-2xl font-bold mb-5">Contact Us</h1>
-      {submitted ? (
-        <p className="text-green-600 font-semibold mb-5">Thanks for connecting with us!</p>
-      ) : (
-        <form onSubmit={handleSubmit} className="max-w-md">
-          <div className="mb-4">
-            <label className="block text-gray-700 font-semibold mb-2">Name</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-semibold mb-2">E-mail</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-semibold mb-2">Subject</label>
-            <input
-              type="text"
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-semibold mb-2">Comments</label>
-            <textarea
-              name="comments"
-              value={formData.comments}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-              rows="5"
-              required
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
-          >
-            Submit
-          </button>
-        </form>
-      )}
-    </div>
+    <>
+      <div className="flex justify-center p-11">
+        <div className="primary-color text-4xl font-bold">Contact Us</div>
+        <div className="underLine contactUs flex responsive flex-col mt-11"></div>
+      </div>
+      <div className="flex responsive flex-row justify-center">
+        <div className="px-2 m-5">
+          {submitted ? (
+            <p className="text-green-600 font-semibold mb-5">
+              Thanks for connecting with us!
+            </p>
+          ) : (
+            <form onSubmit={handleSubmit} className="w-72">
+              <div className="mb-4">
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Name"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Email"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <input
+                  type="text"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  placeholder="Subject"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <textarea
+                  name="comments"
+                  value={formData.comments}
+                  onChange={handleChange}
+                  placeholder="Comment"
+                  className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="formButtom flex text-white font-semibold"
+              >
+                Submit
+              </button>
+            </form>
+          )}
+        </div>
+        <div className="flex responsive flex-col md:flex-row justify-center">
+          <div className="Image Image-contactUs w-48"> </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center">
+        <div></div>
+        <fieldset className="contactDetails text-white flex flex-col w-80 p-3">
+          <label className="flex justify-center" htmlFor="">
+            Mobile No. : +91 8418065420
+          </label>
+          <label className="flex justify-center" htmlFor="">
+            E-mail : rl.ashish01@gmail.com
+          </label>
+        </fieldset>
+      </div>
+    </>
   );
 };
 

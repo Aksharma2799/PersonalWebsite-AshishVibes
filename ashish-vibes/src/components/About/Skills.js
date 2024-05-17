@@ -1,25 +1,26 @@
-import React, { useState, lazy, Suspense, useEffect } from "react";
+import React, { useState, Suspense, useEffect } from "react";
+import SkillIcon from "./SkillIcon";
+
+import Experiences from "../Portfolio/Experiences";
+import Educations from "../Portfolio/Educations";
 import "../Projects/Project.css";
 import "../About/About.css";
-import SkillIcon from "./SkillIcon";
-import Service from '../Services/Service'
+import "../../../src/App.css"
 
 // const SkillSection = lazy(() => import("./SkillSection"));
-const Blob = lazy(() => import("../Blob/Blob"));
+// const Blob = lazy(() => import("../Blob/Blob"));
 
 const Experience = () => (
-  <div>
-    <h2 className="text-2xl font-bold">Experience</h2>
-    {/* <Experience/> */}
-    <Service/>
+  <div className="">
+    {/* Experiences Component */}
+    <Experiences/>
   </div>
 );
 
 const Education = () => (
-  <div>
-    <h2 className="text-2xl font-bold">Education</h2>
-    <Blob />
-    {/* <Education/> */}
+  <div>   
+    {/* Educations Component */}
+    <Educations/>
   </div>
 );
 
@@ -53,7 +54,7 @@ const Skills = () => {
           <div className="text-white">
             <button
               onClick={() => setActiveSection('skills')}
-              className={`font-semibold px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 ${
+              className={` nav-hover font-semibold px-3 py-1 rounded-md text-sm font-medium  ${
                 activeSection === 'skills' ? 'bg-red-700' : ''
               }`}
             >
@@ -61,7 +62,7 @@ const Skills = () => {
             </button>
             <button
               onClick={() => setActiveSection('experience')}
-              className={`font-semibold px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 ${
+              className={`nav-hover font-semibold px-3 py-1 rounded-md text-sm font-medium  ${
                 activeSection === 'experience' ? 'bg-red-700' : ''
               }`}
             >
@@ -69,7 +70,7 @@ const Skills = () => {
             </button>
             <button
               onClick={() => setActiveSection('education')}
-              className={`font-semibold px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 ${
+              className={`nav-hover font-semibold px-2 py-1 rounded-md text-sm font-medium  ${
                 activeSection === 'education' ? 'bg-red-700' : ''
               }`}
             >

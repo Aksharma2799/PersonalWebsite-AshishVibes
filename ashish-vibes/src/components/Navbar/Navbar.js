@@ -23,19 +23,19 @@ const Navbar = () => {
           {/* Navigation Links */}
           <div className="hidden md:flex items-center">
             <div className="ml-4 flex items-center md:ml-6 font-semibold">
-              <Link to="/" onClick={closeMobileMenu} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
+              <Link to="/" onClick={closeMobileMenu} className="text-gray-300  nav-hover px-3 py-2 rounded-md text-sm">
                 Home
               </Link>
-              <Link to="/about" onClick={closeMobileMenu} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
+              <Link to="/about" onClick={closeMobileMenu} className="text-gray-300  nav-hover px-3 py-2 rounded-md text-sm">
                 About
               </Link>
-              <Link to="/contact" onClick={closeMobileMenu} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
+              <Link to="/contact" onClick={closeMobileMenu} className="text-gray-300  nav-hover px-3 py-2 rounded-md text-sm">
                 Contact Us
               </Link>
-              <Link to="/projects" onClick={closeMobileMenu} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
+              <Link to="/projects" onClick={closeMobileMenu} className="text-gray-300  nav-hover px-3 py-2 rounded-md text-sm">
                 Projects
               </Link>
-              <a href="https://youtube.com/@ashishvibes19?si=77J-RHHbUZLiDanm" onClick={closeMobileMenu} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm">
+              <a href="https://youtube.com/@ashishvibes19?si=77J-RHHbUZLiDanm" onClick={closeMobileMenu} className="text-gray-300  nav-hover px-3 py-2 rounded-md text-sm">
                 YouTube
               </a>
             </div>
@@ -71,19 +71,19 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link to="/" onClick={closeMobileMenu} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+            <Link to="/" onClick={closeMobileMenu} className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">
               Home
             </Link>
-            <Link to="/about" onClick={closeMobileMenu} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+            <Link to="/about" onClick={closeMobileMenu} className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">
               About
             </Link>
-            <Link to="/contact" onClick={closeMobileMenu} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+            <Link to="/contact" onClick={closeMobileMenu} className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">
               Contact Us
             </Link>
-            <Link to="/projects" onClick={closeMobileMenu} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+            <Link to="/projects" onClick={closeMobileMenu} className="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">
               Projects
             </Link>
-            <a href="https://youtube.com/@ashishvibes19?si=77J-RHHbUZLiDanm" onClick={closeMobileMenu} className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+            <a href="https://youtube.com/@ashishvibes19?si=77J-RHHbUZLiDanm" onClick={closeMobileMenu} className="text-gray-300  nav-hover block px-3 py-2 rounded-md text-base font-medium">
               YouTube
             </a>
           </div>
