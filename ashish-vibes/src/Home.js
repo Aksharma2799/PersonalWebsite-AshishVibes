@@ -3,8 +3,6 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import "../src/Home.css";
 import Blob from "./components/Blob/Blob";
 import AnimatedIcons from "./components/AnimatedIcons/AnimatedIcons";
-import Projects from "./components/Projects/Projects";
-import Skills from "./components/About/Skills";
 import Service from "./components/Services/Service";
 import Contact from "./components/Contact/Contact";
 
@@ -16,6 +14,9 @@ export const Home = () => {
     <div className="justify-center">
       {/* <Navbar /> */}
       <div className="homePage flex flex-col justify-center md:flex-row p-11">
+        <div className="rightSide">
+          <Blob />
+        </div>
         <div className="leftSide">
           <div className="p-11 text-white">
             <h1 className="primary-color font-extrabold text-4xl py-3">
@@ -54,16 +55,10 @@ export const Home = () => {
             </div>
           </div>
         </div>
-
-        <div className="rightSide">
-          <Blob />
-        </div>
       </div>
-      <AnimatedIcons/>
-      {/* <Projects/> */}
-      {/* <Skills/> */}
-      <Service/>
-      <Contact/>
+      <AnimatedIcons />
+      <Service />
+      <Contact />
     </div>
   );
 };

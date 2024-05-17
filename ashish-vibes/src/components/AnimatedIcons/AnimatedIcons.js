@@ -10,7 +10,7 @@ import "./AnimatedIcons.css"; // Import your CSS file for animations
 
 const AnimatedIcons = () => {
   return (
-    <div className="animated-icons-container space-y-2.5 mx-32 opacity-50">
+    <div className="mobile-800 mobile-left flex justify-center animated-icons-container space-y-2.5 mx-32 opacity-50">
       <div className="leftIcons mx-32">
         <div className="icon-container">
           <FaGithub className="icon github" />

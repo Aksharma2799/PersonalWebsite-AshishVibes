@@ -1,8 +1,7 @@
 .Image-contactUs {
   background-image: url("../../assets/image/contactUs.png");
-  /* width: 380px; */
 }
-.contactUs {
+.contactUsLine {
   width: 150px;
 }
 
@@ -21,7 +20,6 @@
 .formButtom:hover {
   border: none;
   background-color: var(--primary-color);
-  /* transition: 0.5s ease-in; */
 }
 
 form input,

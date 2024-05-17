@@ -27,12 +27,12 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <div className="">
       <div className="flex justify-center p-11">
         <div className="primary-color text-4xl font-bold">Contact Us</div>
-        <div className="underLine contactUs flex responsive flex-col mt-11"></div>
+        <div className="underLine contactUsLine flex responsive flex-col mt-11"></div>
       </div>
-      <div className="flex responsive flex-row justify-center">
+      <div className="mobile-800 flex responsive flex-row justify-center">
         <div className="px-2 m-5">
           {submitted ? (
             <p className="text-green-600 font-semibold mb-5">
@@ -101,15 +101,24 @@ const Contact = () => {
       <div className="flex justify-center">
         <div></div>
         <fieldset className="contactDetails text-white flex flex-col w-80 p-3">
-          <label className="flex justify-center" htmlFor="">
-            Mobile No. : +91 8418065420
+          <label className="flex justify-center">
+            Mobile No. :
+            <a href="tel:+918418065420" className="text-blue-500 ml-2">
+              +91 8418065420
+            </a>
           </label>
-          <label className="flex justify-center" htmlFor="">
-            E-mail : rl.ashish01@gmail.com
+          <label className="flex justify-center">
+            E-mail :
+            <a
+              href="mailto:rl.ashish01@gmail.com"
+              className="text-blue-500 ml-2"
+            >
+              rl.ashish01@gmail.com
+            </a>
           </label>
         </fieldset>
       </div>
-    </>
+    </div>
   );
 };
 

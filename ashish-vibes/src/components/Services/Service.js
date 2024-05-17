@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ServiceCard } from "../../Data";
+import "../../../src/App.css";
 import "./Service.css";
 
 const Service = () => {
@@ -9,8 +10,8 @@ const Service = () => {
         <div className="primary-color text-4xl font-bold">Service</div>
         <div className="underLine flex flex-col mt-11"></div>
       </div>
-      <div className="flex justify-center items-center bg-transparent p-2 m-11 ">
-        <div className="flex flex-row flex-nowrap gap-5">
+      <div className="flex flex-row justify-center items-center bg-transparent p-2 m-11 ">
+        <div className="mobile-800 flex flex-row flex-nowrap gap-5">
           {ServiceCard.map((card, index) => (
             <Card
               key={index}
