@@ -10,6 +10,7 @@ import Contact from "./components/Contact/Contact";
 // import Experience from "./components/About/Experience";
 // import Education from "./components/About/Education";
 import SkillSection from "./components/About/SkillSection";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         {/* <Route path="/education" component={Education} /> */}
         {/* <Route path="/youtube" component={YouTube} /> */}
       </div>
+      <ScrollToTop/>
       <Footer />
     </Router>
   );
