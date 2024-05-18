@@ -1,3 +1,5 @@
+/* src/components/Service/Service.css */
+
 /* Container styles */
 .container {
   display: flex;
@@ -19,9 +21,9 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  /* border: 2px solid rgb(255, 255, 255, 0.1); */
   box-shadow: rgba(51, 50, 50, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .card::before {
   content: "";
   position: absolute;
@@ -47,6 +49,16 @@
 .card:hover .card-description {
   color: white;
 }
+
 .card:hover .card-title {
   color: var(--primary-color);
 }
+
+.carousel-container {
+  width: 100%;
+  background-color: none !important;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Other styles remain unchanged */

@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import emailjs, { send } from 'emailjs-com';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import "../About/About.css";
 import "./Contact.css";
 import "../../../src/Home.css";
@@ -11,6 +15,7 @@ const Contact = () => {
     comments: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,8 +27,21 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Data:", formData);
-    setSubmitted(true);
+
+    emailjs.send(
+      'YOUR_SERVICE_ID', // replace with your EmailJS service ID
+      'YOUR_TEMPLATE_ID', // replace with your EmailJS template ID
+      formData,
+      'YOUR_USER_ID' // replace with your EmailJS user ID
+    ).then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      setSubmitted(true);
+      setError(null);
+      toast.success("Email sent successfully!");
+    }).catch((err) => {
+      console.error('FAILED...', err);
+      setError('Failed to send the message. Please try again.');
+    });
   };
 
   return (
@@ -43,7 +61,7 @@ const Contact = () => {
               <div className="mb-4">
                 <input
                   type="text"
-                  name="name"
+                  name="user_name"
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Name"
@@ -54,7 +72,7 @@ const Contact = () => {
               <div className="mb-4">
                 <input
                   type="email"
-                  name="email"
+                  name="user_email"
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email"
@@ -62,7 +80,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div className="mb-4">
+              {/* <div className="mb-4">
                 <input
                   type="text"
                   name="subject"
@@ -72,10 +90,10 @@ const Contact = () => {
                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                   required
                 />
-              </div>
+              </div> */}
               <div className="mb-4">
                 <textarea
-                  name="comments"
+                  name="message"
                   value={formData.comments}
                   onChange={handleChange}
                   placeholder="Comment"
@@ -84,8 +102,10 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
+              {error && <p className="text-red-600 mb-4">{error}</p>}
               <button
                 type="submit"
+                value={send}
                 className="formButtom flex text-white font-semibold"
               >
                 Submit
@@ -102,22 +122,18 @@ const Contact = () => {
         <div></div>
         <fieldset className="contactDetails text-white flex flex-col w-80 p-3">
           <label className="flex justify-center">
-            Mobile No. :
-            <a href="tel:+918418065420" className="text-blue-500 ml-2">
-              +91 8418065420
-            </a>
-          </label>
-          <label className="flex justify-center">
             E-mail :
             <a
-              href="mailto:rl.ashish01@gmail.com"
+              href="mailto:ashishvibes19@gmail.com"
               className="text-blue-500 ml-2"
             >
-              rl.ashish01@gmail.com
+              ashishvibes19@gmail.com
             </a>
           </label>
         </fieldset>
       </div>
+
+      <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
     </div>
   );
 };

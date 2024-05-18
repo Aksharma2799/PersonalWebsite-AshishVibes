@@ -1,81 +1,70 @@
-import React, { useState, useEffect, useRef } from "react";
+// src/components/Service/Service.js
+import React from "react";
+import Slider from "react-slick";
 import { ServiceCard } from "../../Data";
 import "../../../src/App.css";
 import "./Service.css";
+import Card from "./Card"; // Assuming Card is in the same folder
 
 const Service = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <div className="flex justify-center p-11">
         <div className="primary-color text-4xl font-bold">Service</div>
         <div className="underLine flex flex-col mt-11"></div>
       </div>
-      <div className="flex flex-row justify-center items-center bg-transparent p-2 m-11 ">
-        <div className="mobile-800 flex flex-row flex-nowrap gap-5">
-          {ServiceCard.map((card, index) => (
-            <Card
-              key={index}
-              image={card.image}
-              title={card.title}
-              description={card.description}
-            />
-          ))}
-        </div>
+      <div className="flex flex-row justify-center items-center bg-transparent p-2 m-11">
+        {ServiceCard.length > 3 ? (
+          <Slider {...settings} className="carousel-container">
+            {ServiceCard.map((card, index) => (
+              <Card
+                key={index}
+                image={card.image}
+                title={card.title}
+                description={card.description}
+              />
+            ))}
+          </Slider>
+        ) : (
+          <div className="mobile-800 flex flex-row flex-nowrap gap-5">
+            {ServiceCard.map((card, index) => (
+              <Card
+                key={index}
+                image={card.image}
+                title={card.title}
+                description={card.description}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </>
-  );
-};
-
-const Card = ({ image, title, description }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (cardRef.current && !cardRef.current.contains(event.target)) {
-        setIsExpanded(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
-
-  const getShortDescription = (desc) => {
-    if (desc.length <= 80) return desc;
-    return `${desc.substring(0, 80)}...`;
-  };
-
-  return (
-    <div
-      ref={cardRef}
-      className="card relative bg-transparent rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
-    >
-      <img
-        src={image}
-        alt={title}
-        className="card-image bg-cover flex justify-center items-center ml-auto mr-auto h-48 object-cover"
-      />
-
-      <div className="card-content text-white p-2 ">
-        <h3 className="card-title flex justify-center text-2xl font-bold mb-2">
-          {title}
-        </h3>
-        <p className="card-description text-white-600">
-          {isExpanded ? description : getShortDescription(description)}
-          <button className="text-blue-500 ml-2" onClick={toggleExpand}>
-            {isExpanded ? "Show Less" : "Show More"}
-          </button>
-        </p>
-      </div>
-    </div>
   );
 };
 

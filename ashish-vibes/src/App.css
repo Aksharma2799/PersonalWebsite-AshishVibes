@@ -46,11 +46,9 @@ blue and white color combination
     align-items: center; /* Center items in the column direction */
   }
   .mobile-left {
-    width: 10px;
-    justify-content: start;
-    position: relative;
-    top: auto;
-    left: 0;
-    align-items: start;
+  display: none;
+  }
+  .Image-contactUs{
+    display: none;
   }
 }
