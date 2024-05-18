@@ -9,10 +9,9 @@ import "../../../src/Home.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    comments: "",
+    user_name: "",
+    user_email: "",
+    message: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(null);
@@ -29,10 +28,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.send(
-      'YOUR_SERVICE_ID', // replace with your EmailJS service ID
-      'YOUR_TEMPLATE_ID', // replace with your EmailJS template ID
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       formData,
-      'YOUR_USER_ID' // replace with your EmailJS user ID
+      process.env.REACT_APP_EMAILJS_USER_ID
     ).then((response) => {
       console.log('SUCCESS!', response.status, response.text);
       setSubmitted(true);
