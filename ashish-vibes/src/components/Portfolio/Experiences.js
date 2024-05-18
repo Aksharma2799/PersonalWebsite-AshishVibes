@@ -27,14 +27,14 @@ const Experiences = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="container  mx-auto p-4">
-        <div className="relative timeline-line">
+      <div className="m-11">
+        <div className="relative timeline-line ">
           {experienceData.map((item, index) => (
-            <div key={index} className="mb-10 ml-4">
+            <div key={index} className="ml-4">
               <div className="absolute w-8 h-8 bg-gray-200 rounded-full -left-4 border border-white flex items-center justify-center">
                 <FontAwesomeIcon icon={faBriefcase} className="text-blue-500" />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col justify-center items-center">
                 <span className="primary-color font-semibold text-3xl">
                   {item.company_name}
                 </span>
@@ -42,7 +42,6 @@ const Experiences = () => {
                 <span className="text-gray-400">{item.years}</span>
                 <p className="mt-2 text-gray-600">{item.start_date}</p>
                 <p className="mt-2 text-gray-600">{item.end_date}</p>
-                {/* <p className="mt-2 text-gray-600">{item.start_date}</p> */}
                 <p className="mt-2 text-red-600 font-semibold text-lg">
                   Responsibilities:
                 </p>

@@ -1,8 +1,6 @@
 import React from "react";
 import Blob from "../Blob/Blob";
 import Skills from "./Skills";
-import SkillSection from "./SkillSection";
-
 export const About = () => {
   return (
     <>
@@ -32,9 +30,7 @@ export const About = () => {
       <div className="">
         <Skills />
       </div>
-      <div>
-        <SkillSection/>
-      </div>
+      <div>{/* <SkillSection/> */}</div>
     </>
   );
 };

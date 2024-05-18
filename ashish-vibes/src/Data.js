@@ -246,54 +246,57 @@ export const ServiceCard = [
 
 export const educationData = [
   {
-    "company": "ABC University",
-    "jobTitle": "Bachelor of Science in Computer Science",
-    "years": "2015 - 2019",
-    "description": "Studied core computer science subjects including algorithms, data structures, and software engineering."
+    college_name: "AITM Varanasi",
+    jobTitle: "Bachelor of Science in Computer Science",
+    years: "2018 - 2022",
+    description:
+      "Studied core computer science subjects including algorithms, data structures, and software engineering.",
   },
   {
-    "company": "XYZ Institute",
-    "jobTitle": "Master of Science in Software Engineering",
-    "years": "2019 - 2021",
-    "description": "Specialized in software development methodologies, project management, and advanced programming."
+    college_name: "SRSN Inter College",
+    jobTitle: "Intermediate",
+    years: "2015 - 2017",
+    description:
+      "Specialized in software development methodologies, project management, and advanced programming.",
   },
   {
-    "company": "XYZ InstituteInstituteInstitute",
-    "jobTitle": "Master of Science in Software Engineering",
-    "years": "2019 - 2021",
-    "description": "Specialized in software development methodologies, project management, and advanced programming."
-  }
+    college_name: "SRSN Inter College",
+    jobTitle: "High School",
+    years: "2013 - 2015",
+    description:
+      "Specialized in software development methodologies, project management, and advanced programming.",
+  },
 ];
 
 export const experienceData = [
   {
-    "company_name": "Bahwan Cybertek PVT LTD",
-    "position": "Software Engineer",
-    "start_date": "2022-07-22",
-    "end_date": "Present",
-    "responsibilities": [
+    company_name: "Bahwan Cybertek PVT LTD",
+    position: "Software Engineer",
+    start_date: "2022-07-22",
+    end_date: "Present",
+    responsibilities: [
       "Designed and implemented software solutions for product features.",
       "Collaborated with cross-functional teams to deliver projects on time.",
       "Identified and resolved technical issues in a timely manner.",
-      "Contributed to the improvement of development processes and methodologies."
+      "Contributed to the improvement of development processes and methodologies.",
     ],
-    "achievements": [
+    achievements: [
       "Received Employee of the Month award for outstanding performance.",
-      "Reduced system downtime by 20% through implementation of performance optimization strategies."
-    ]
+      "Reduced system downtime by 20% through implementation of performance optimization strategies.",
+    ],
   },
   {
-    "company_name": "Another Company",
-    "position": "Another Position",
-    "start_date": "2020-01-01",
-    "end_date": "2022-06-30",
-    "responsibilities": [
+    company_name: "Another Company",
+    position: "Another Position",
+    start_date: "2020-01-01",
+    end_date: "2022-06-30",
+    responsibilities: [
       "Developed new features for the company's flagship product.",
       "Participated in code reviews and provided constructive feedback.",
-      "Researched and implemented emerging technologies to improve product functionality."
+      "Researched and implemented emerging technologies to improve product functionality.",
     ],
-    "achievements": [
+    achievements: [
       "Led a team that successfully launched a major product update ahead of schedule.",
-    ]
+    ],
   },
 ];

@@ -73,8 +73,6 @@
   display: inline-block;
   top: 0;
   left: 0;
-  height: 50vh;
-
   font-weight: 600;
   letter-spacing: 0.0625em;
   font-size: 1.3em;
@@ -104,11 +102,11 @@
 
 @media (max-width: 800px) {
   .Image {
-      width: 300px;
-      height: 250px;
-      margin: auto;
+    width: 300px;
+    height: 250px;
+    margin: auto;
   }
-  .tagcloud{
+  .tagcloud {
     font-size: 1rem;
   }
 }

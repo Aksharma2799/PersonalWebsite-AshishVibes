@@ -1,42 +1,38 @@
 import React, { useState, Suspense, useEffect } from "react";
 import SkillIcon from "./SkillIcon";
-
 import Experiences from "../Portfolio/Experiences";
 import Educations from "../Portfolio/Educations";
 import "../Projects/Project.css";
 import "../About/About.css";
-import "../../../src/App.css"
-
-// const SkillSection = lazy(() => import("./SkillSection"));
-// const Blob = lazy(() => import("../Blob/Blob"));
+import "../../../src/App.css";
 
 const Experience = () => (
-  <div className="">
+  <div className="relative">
     {/* Experiences Component */}
-    <Experiences/>
+    <Experiences />
   </div>
 );
 
 const Education = () => (
-  <div>   
+  <div className="relative">
     {/* Educations Component */}
-    <Educations/>
+    <Educations />
   </div>
 );
 
 const Skills = () => {
-  const [activeSection, setActiveSection] = useState('skills');
+  const [activeSection, setActiveSection] = useState("skills");
 
   useEffect(() => {
     // Assuming tagCloudInstance is created here or in SkillSection
     let tagCloudInstance;
-    if (activeSection === 'skills') {
+    if (activeSection === "skills") {
       // Initialize tagCloudInstance
     }
 
     return () => {
       // Cleanup tagCloudInstance if it exists
-      if (tagCloudInstance && typeof tagCloudInstance.destroy === 'function') {
+      if (tagCloudInstance && typeof tagCloudInstance.destroy === "function") {
         tagCloudInstance.destroy();
       }
     };
@@ -53,25 +49,25 @@ const Skills = () => {
         <div className="flex">
           <div className="text-white">
             <button
-              onClick={() => setActiveSection('skills')}
+              onClick={() => setActiveSection("skills")}
               className={` nav-hover font-semibold px-3 py-1 rounded-md text-sm font-medium  ${
-                activeSection === 'skills' ? 'bg-red-700' : ''
+                activeSection === "skills" ? "bg-red-700" : ""
               }`}
             >
               Skills
             </button>
             <button
-              onClick={() => setActiveSection('experience')}
+              onClick={() => setActiveSection("experience")}
               className={`nav-hover font-semibold px-3 py-1 rounded-md text-sm font-medium  ${
-                activeSection === 'experience' ? 'bg-red-700' : ''
+                activeSection === "experience" ? "bg-red-700" : ""
               }`}
             >
               Experience
             </button>
             <button
-              onClick={() => setActiveSection('education')}
+              onClick={() => setActiveSection("education")}
               className={`nav-hover font-semibold px-2 py-1 rounded-md text-sm font-medium  ${
-                activeSection === 'education' ? 'bg-red-700' : ''
+                activeSection === "education" ? "bg-red-700" : ""
               }`}
             >
               Education
@@ -82,18 +78,14 @@ const Skills = () => {
 
       <div>
         <Suspense fallback={<div>Loading...</div>}>
-          {activeSection === 'skills' && (
+          {activeSection === "skills" && (
             <div>
-            {/* Skill Component */}
-              <SkillIcon/>
+              {/* Skill Component */}
+              <SkillIcon />
             </div>
           )}
-          {activeSection === 'experience' && (
-            <Experience />
-          )}
-          {activeSection === 'education' && (
-            <Education />
-          )}
+          {activeSection === "experience" && <Experience />}
+          {activeSection === "education" && <Education />}
         </Suspense>
       </div>
     </>
