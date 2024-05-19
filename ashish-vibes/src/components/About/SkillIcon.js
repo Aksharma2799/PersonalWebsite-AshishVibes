@@ -63,7 +63,6 @@ const SkillIcon = () => {
     <div className="mobile-800 flex justify-center">
       <div className="flex flex-col md:flex-row justify-center m-11">
         <div className="Image"> </div>
-        {/* //   <SkillIcon/> */}
       </div>
 
       <div className="text-sphere m-11">

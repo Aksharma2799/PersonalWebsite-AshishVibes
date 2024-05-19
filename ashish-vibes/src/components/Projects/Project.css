@@ -1,32 +1,35 @@
 /* Projects.css */
 
 .underLine {
-    position: absolute;
-    width: 100px;
-    height: 3px;
-    background-color: var(--primary-color);
-    border-radius: 7px;
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 7px;
 }
 
 .underLine::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-radius: 7px;
-    background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
-    animation: underlineAnimation 1s ease infinite; /* Removed 'forwards' */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 7px;
+  background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+  animation: underlineAnimation 1s ease infinite; /* Removed 'forwards' */
 }
 
 @keyframes underlineAnimation {
-    0% { width: 0; }
-    100% { width: 100%; }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 @media (max-width: 720px) {
-    .flex-wrap > * {
-      width: 100%;
-    }
+  .flex-wrap > * {
+    width: 100%;
   }
-  
+}

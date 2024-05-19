@@ -30,7 +30,7 @@ const Educations = () => {
       <div className="m-11 ">
         <div className="relative timeline-line">
           {educationData.map((item, index) => (
-            <div key={index} className="ml-4">
+            <div key={index} className="ml-4 mt-5">
               <div className="absolute w-8 h-8 bg-gray-200 rounded-full -left-4 border border-white flex items-center justify-center">
                 <FontAwesomeIcon
                   icon={faGraduationCap}

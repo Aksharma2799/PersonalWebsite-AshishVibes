@@ -1,67 +1,63 @@
 .animated-icons-container {
-    position: absolute;
-    top: 0;
-    /* justify-content: center; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vh;
-    background-color: transparent;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vh;
+  background-color: transparent;
+  z-index: -1;
 }
 
-  
-  .icon-container {
-    position: relative;
-    margin: 0 10px;
-    width: 100px;
-    height: 100px;
-    animation: iconMomentum 5s infinite alternate;
-  }
-  
-  .icon {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-  }
-  
-  @keyframes iconMomentum {
-    0% {
-      transform: translateY(-50px);
-    }
-    50% {
-      transform: translateY(50px);
-    }
-    100% {
-      transform: translateY(-50px);
-    }
-  }
-  
-  .github {
+.icon-container {
+  position: relative;
+  margin: 0 10px;
+  width: 100px;
+  height: 100px;
+  animation: iconMomentum 5s infinite alternate;
+}
 
+.icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes iconMomentum {
+  0% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+.github {
   color: var(--primary-color);
+}
 
-  }
-  
-  .react {
-    color: #61dafb;
-  }
-  
-  .node {
-    color: #68a063;
-  }
-  
-  .mongodb {
-    color: #589636;
-  }
-  
-  .youtube {
-    color: #ff0000;
-  }
-  
-  /* Add any additional styles or animations as needed */
-  /* @media (max-width: 800px) {
+.react {
+  color: #61dafb;
+}
+
+.node {
+  color: #68a063;
+}
+
+.mongodb {
+  color: #589636;
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+/* Add any additional styles or animations as needed */
+/* @media (max-width: 800px) {
     .mobile-800 {
       
     }

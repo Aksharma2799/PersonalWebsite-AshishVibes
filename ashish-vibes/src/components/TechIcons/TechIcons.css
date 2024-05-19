@@ -1,0 +1,18 @@
+.tech-icon {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 5vh;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+}
+
+.tech-icons {
+  width: 40;
+  height: 40;
+  padding: 15px;
+  border-radius: 100%;
+  /* box-shadow: rgb(204, 206, 113) 0px 20px 30px -10px; */
+}

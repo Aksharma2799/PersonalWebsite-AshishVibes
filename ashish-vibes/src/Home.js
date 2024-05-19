@@ -5,6 +5,7 @@ import Blob from "./components/Blob/Blob";
 import AnimatedIcons from "./components/AnimatedIcons/AnimatedIcons";
 import Service from "./components/Services/Service";
 import Contact from "./components/Contact/Contact";
+import TechIcons from "./components/TechIcons/TechIcons";
 
 export const Home = () => {
   const roles = ["Developer", "Designer", "YouTuber"];
@@ -59,6 +60,7 @@ export const Home = () => {
       <AnimatedIcons />
       <Service />
       <Contact />
+      <TechIcons/>
     </div>
   );
 };
