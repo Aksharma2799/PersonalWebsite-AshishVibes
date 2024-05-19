@@ -5,8 +5,6 @@ import Educations from "../Portfolio/Educations";
 import "../Projects/Project.css";
 import "../About/About.css";
 import "../../../src/App.css";
-import AnimatedIcons from "../AnimatedIcons/AnimatedIcons";
-import TechIcons from "../TechIcons/TechIcons";
 
 const Experience = () => (
   <div className="relative">
@@ -90,8 +88,6 @@ const Skills = () => {
           {activeSection === "education" && <Education />}
         </Suspense>
       </div>
-      <AnimatedIcons/>
-      <TechIcons/>
     </>
   );
 };

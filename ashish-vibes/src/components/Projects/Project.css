@@ -19,7 +19,10 @@
   background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
   animation: underlineAnimation 1s ease infinite; /* Removed 'forwards' */
 }
+.CardsProject{
+  box-shadow: rgba(51, 50, 50, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
+}
 @keyframes underlineAnimation {
   0% {
     width: 0;
