@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
 import { FcLike, FcLikePlaceholder } from "react-icons/fc";
 import { toast } from 'react-toastify';
@@ -12,7 +12,7 @@ const CardProject = ({ course, likedCourses, setLikedCourses }) => {
         max: 25,
         speed: 400,
         scale: 1.05,
-        startX :10,
+        startX: 10,
         glare: true,
         "max-glare": 0.5,
       });
@@ -33,6 +33,7 @@ const CardProject = ({ course, likedCourses, setLikedCourses }) => {
       setLikedCourses(prev => [...prev, course.id]);
       toast.success("Liked Successfully");
     }
+    console.log("Toast should be shown now");
   };
 
   return (

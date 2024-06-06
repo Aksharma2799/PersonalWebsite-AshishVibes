@@ -1,10 +1,9 @@
-// src/components/Service/Service.js
 import React from "react";
 import Slider from "react-slick";
 import { ServiceCard } from "../../Data";
 import "../../../src/App.css";
 import "./Service.css";
-import Card from "./Card"; // Assuming Card is in the same folder
+import Card from "./Card";
 
 const Service = () => {
   const settings = {
@@ -64,6 +63,7 @@ const Service = () => {
           </div>
         )}
       </div>
+      <AadharInput/>
     </>
   );
 };

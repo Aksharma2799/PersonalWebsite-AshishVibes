@@ -10,7 +10,7 @@ const Filter = (props) => {
     setShowFilters(false); // Close the filter menu after selection
   }
 
-  function toggleFilters() {
+  function toggleFilters() {  
     setShowFilters(!showFilters);
   }
 

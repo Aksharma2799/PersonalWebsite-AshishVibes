@@ -16,7 +16,7 @@ const Projects = () => {
     try {
       setCourses(apiUrl.data);
     } catch (error) {
-      toast.error("Network me koi dikkat hai");
+      toast.error("Network issue");
     }
     setLoading(false);
   };
