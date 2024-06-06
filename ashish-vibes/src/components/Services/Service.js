@@ -63,7 +63,6 @@ const Service = () => {
           </div>
         )}
       </div>
-      <AadharInput/>
     </>
   );
 };

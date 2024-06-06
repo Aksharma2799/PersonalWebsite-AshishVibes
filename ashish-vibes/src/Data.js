@@ -242,13 +242,7 @@ export const ServiceCard = [
     title: "Design",
     description:
       "I blend creativity with functionality to produce visually stunning and effective solutions. I create eye-catching posters, sleek web pages, and memorable logos that stand out. My focus is on aesthetics and usability to bring your vision to life.",
-  },
-  {
-    image: "https://i.ibb.co/XFs30bD/graphics-3.png",
-    title: "Design",
-    description:
-      "I blend creativity with functionality to produce visually stunning and effective solutions. I create eye-catching posters, sleek web pages, and memorable logos that stand out. My focus is on aesthetics and usability to bring your vision to life.",
-  },
+  }
 ];
 
 export const educationData = [

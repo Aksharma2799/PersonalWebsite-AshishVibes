@@ -29,6 +29,9 @@ body {
 .nav-hover:hover {
   transform: scale(1.1);
 }
+.active{
+  color: var(--primary-color);
+}
 /* 
 Yellow and white color combination
 background: rgb(255,255,255);
