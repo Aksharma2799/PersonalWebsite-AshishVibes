@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink , Link} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -34,6 +34,9 @@ const Navbar = () => {
               </NavLink>
               <NavLink to="/projects" onClick={closeMobileMenu} className="text-gray-300  nav-hover px-3 py-2 rounded-md text-sm">
                 Projects
+              </NavLink>
+              <NavLink to="/blogs" onClick={closeMobileMenu} className="text-gray-300  nav-hover px-3 py-2 rounded-md text-sm">
+                Blogs
               </NavLink>
               <a href="https://youtube.com/@ashishvibes19?si=77J-RHHbUZLiDanm" onClick={closeMobileMenu} className="text-gray-300  nav-hover px-3 py-2 rounded-md text-sm">
                 YouTube

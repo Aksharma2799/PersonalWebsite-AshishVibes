@@ -11,6 +11,7 @@ import ScrollToTop from "./ScrollToTop";
 import TechIcons from "./components/TechIcons/TechIcons";
 import Home from "./Home";
 import "./App.css";
+import Blogs from "./pages/Blogs";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
+        <Route path = "/blogs" component = {Blogs}/>
         {/* <Route path="*" component={PageNotFound} /> */}
       </div>
       <ScrollToTop />
